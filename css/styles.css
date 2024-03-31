@@ -163,8 +163,10 @@ button {
 }
 
 .mob-menu {
+  z-index: 999;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fcfcfc;
   width: 100vw;
   height: 100vh;
@@ -233,7 +235,6 @@ button {
 }
 
 .mob-current {
-  color: #404bbf;
 }
 
 .mob-address {
@@ -625,7 +626,9 @@ footer {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
-  display: inline-block;
+  /* display: inline-block; */
+  display: block;
+  text-align: center;
 }
 
 .footer-logo-part {
@@ -1064,7 +1067,6 @@ footer {
   .team-item {
     width: calc((100% - 24px) / 2);
     width: 264px;
-    height: 428px;
   }
 }
 
