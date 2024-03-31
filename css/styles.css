@@ -1181,9 +1181,23 @@ footer {
     margin-right: 120px;
   }
 
-  .footer-wrap-text .footer-logo .link-footer:hover,
+  .footer-wrap-text .footer-logo {
+    display: inline-block;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .link-footer:hover,
   .link-footer:focus {
     background-color: #31d0aa;
+  }
+
+  .footer-form-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
   }
 
   .footer-form-btn:hover,
