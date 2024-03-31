@@ -349,8 +349,10 @@ button {
 /* section content */
 
 .content {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -367,36 +369,49 @@ button {
 }
 
 .content-list {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  gap: 24px; */
 }
 
-.content-item {
-  width: calc((100% - 3 * 24px) / 4);
+.content-item:not(:last-child) {
+  /* width: calc((100% - 3 * 24px) / 4); */
+  margin-bottom: 72px;
 }
 
 .content-item-icon {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
-  min-height: 112px;
+  min-height: 112px; */
+  display: none;
 }
 
 .content-subtitle {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #2e2f42; */
   margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 
 .content-item-text {
-  font-weight: 400;
+  /* font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455; */
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -409,8 +424,10 @@ button {
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title {
@@ -426,18 +443,23 @@ button {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  /* gap: 24px; */
 }
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-image {
+  margin: 0 auto;
 }
 
 .team-subtitle {
@@ -487,7 +509,7 @@ button {
   height: 40px;
 }
 
-.link-team:hover,
+/* .link-team:hover, */
 .link-team:focus {
   background-color: #404bbf;
 }
@@ -580,18 +602,22 @@ footer {
 }
 
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-wrap {
   display: flex;
-  align-items: baseline;
-  flex-direction: row;
+  flex-direction: column;
+  /* align-items: baseline;
+  flex-direction: row; */
+  gap: 72px;
 }
 
 .footer-wrap-text {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .footer-wrap-text .footer-logo {
@@ -622,7 +648,8 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 72px;
 }
 
@@ -636,6 +663,10 @@ footer {
 }
 
 .footer-wrap-soc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-icon-link {
@@ -664,12 +695,19 @@ footer {
 }
 
 .footer-bottom {
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 80px; */
 }
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 24px; */
 }
 
 .footer-input {
@@ -678,12 +716,14 @@ footer {
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
   background-color: transparent;
   font-size: 12px;
   line-height: 2;
   padding-left: 16px;
   color: #ffffff;
   letter-spacing: 0.04em;
+  margin-bottom: 16px;
 }
 
 .footer-input::placeholder {
@@ -694,8 +734,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 16px;
+  /* flex-direction: row; */
+  /* gap: 16px; */
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -710,7 +750,6 @@ footer {
   line-height: 1.5;
 }
 
-.footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: #404bbf;
 }
@@ -1014,6 +1053,36 @@ footer {
   .address-link:focus {
     color: #404bbf;
   }
+
+  .content {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .content-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .content-subtitle {
+    text-align: start;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    width: 264px;
+    height: 428px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1034,5 +1103,91 @@ footer {
   .address-link {
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .content-list {
+    gap: 24px;
+  }
+
+  .content-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .content-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    min-height: 112px;
+  }
+
+  .content-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
+  .content-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .link-team:hover,
+  .link-team:focus {
+    background-color: #404bbf;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 72px;
+  }
+
+  .footer-wrap-text {
+    margin-right: 120px;
+  }
+
+  .footer-wrap-text .footer-logo .link-footer:hover,
+  .link-footer:focus {
+    background-color: #31d0aa;
+  }
+
+  .footer-form-btn:hover,
+  .footer-form-btn:focus {
+    background-color: #404bbf;
   }
 }
