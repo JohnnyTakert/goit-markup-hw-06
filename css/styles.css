@@ -376,7 +376,7 @@ button {
 
 .content-item:not(:last-child) {
   /* width: calc((100% - 3 * 24px) / 4); */
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 
 .content-item-icon {
@@ -447,7 +447,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 72px;
+  /* gap: 72px; */
   /* gap: 24px; */
 }
 
@@ -1199,7 +1199,7 @@ footer {
   }
 
   .footer-wrap-text {
-    margin-right: 120px;
+    padding-right: 120px;
   }
 
   .footer-wrap-text .footer-logo {
@@ -1220,6 +1220,14 @@ footer {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .content-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .team-list {
+    gap: 72px;
+  }
+
   .footer-text {
     margin-bottom: 72px;
   }
