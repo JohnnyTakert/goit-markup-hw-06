@@ -1067,6 +1067,7 @@ footer {
   .team-item {
     width: calc((100% - 24px) / 2);
     width: 264px;
+    height: 428px;
   }
 }
 
